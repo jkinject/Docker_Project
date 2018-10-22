@@ -21,7 +21,7 @@ Springboot, nginx, docker-compose 과제
 * restart : 컨테이너 환경 전체 재시작
 * deploy : 웹어플리케이션 무중단 배포
 
-Web Application 수정후 아래 명령어로 무중단 deploy 가능 (※ deploy는 start이후 진행해야함)
+Web Application 수정후 위 script로 무중단 deploy 가능 (※ deploy는 start이후 진행해야함)
 
 # 실행 결과
 컨테이터 환경 전체 실행후 https://localhost/health 접속시 Json Type으로 IP주소를 반환
