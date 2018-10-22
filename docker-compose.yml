@@ -1,0 +1,47 @@
+version: "2"
+services:
+  webserver1:
+    container_name: webserver1
+    build: webserver/
+    ports:
+      - "8080"
+    expose:
+      - "8080"
+    networks:
+      - backend
+
+  webserver2:
+    container_name: webserver2
+    build: webserver/
+    ports:
+      - "8080"
+    expose:
+      - "8080"
+    networks:
+      - backend
+
+  webserver3:
+    container_name: webserver3
+    build: webserver/
+    ports:
+      - "8080"
+    expose:
+      - "8080"
+    networks:
+      - backend
+
+  nginx:
+    container_name: lb
+    build: nginx/
+    ports:
+      - "80:80"
+    links:
+      - webserver1
+      - webserver2
+      - webserver3
+    networks:
+      - backend
+
+networks:
+  backend:
+    driver: bridge
