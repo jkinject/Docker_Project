@@ -13,7 +13,6 @@ Springboot, nginx, docker-compose 과제
 * Web Application Server 3개 (Container scale in/out 가능) / docker-compose.yml, nginx.conf 파일 수정 필요
 
 ### 사용법
-Web Application 수정후 아래 명령어로 무중단 deploy 가능 (※ deploy는 start이후 진행해야함)
 ----
 	$ python devops.py [start | stop | restart | deploy]
 ----
@@ -21,6 +20,8 @@ Web Application 수정후 아래 명령어로 무중단 deploy 가능 (※ deplo
 * stop : 컨테이너 환경 전체 중지
 * restart : 컨테이너 환경 전체 재시작
 * deploy : 웹어플리케이션 무중단 배포
+
+Web Application 수정후 아래 명령어로 무중단 deploy 가능 (※ deploy는 start이후 진행해야함)
 
 # 실행 결과
 컨테이터 환경 전체 실행후 https://localhost/health 접속시 Json Type으로 IP주소를 반환
