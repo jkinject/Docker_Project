@@ -13,6 +13,7 @@ Springboot, nginx, docker-compose 과제
 * Web Application Server 3개 (Container scale in/out 가능) / docker-compose.yml, nginx.conf 파일 수정 필요
 
 ### 사용법
+Web Application 수정후 아래 명령어로 무중단 deploy 가능 (※ deploy는 start이후 진행해야함)
 ----
 	$ python devops.py [start | stop | restart | deploy]
 ----
