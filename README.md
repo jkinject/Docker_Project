@@ -7,6 +7,7 @@ Springboot, nginx, docker-compose 과제
 * Web Application Server 3개 (Container scale in/out 가능 - docker-compose.yml, nginx.conf 파일 수정 필요)
 
 ### 빌드 환경
+* Ubuntu 16.08
 * Java 1.8.0_191
 * Python 2.7.12
 * Docker 18.06.1
