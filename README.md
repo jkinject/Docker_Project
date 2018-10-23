@@ -21,7 +21,7 @@ Springboot, nginx, docker-compose 과제
 	$ python devops.py start
 	$ python devops.py [stop | restart | deploy]
 
-### 사용법
+### 스크립트 사용법
 	$ python devops.py [start | stop | restart | deploy]
 ----
 * start : 컨테이너 환경 전체 실행
@@ -31,5 +31,5 @@ Springboot, nginx, docker-compose 과제
 
 Web Application 수정후 위 script로 무중단 deploy 가능 (※ deploy는 start이후 진행해야함)
 
-### 실행 결과
-컨테이터 환경 전체 실행후 https://localhost/health 접속시 Json Type으로 IP주소를 반환
+### Web Application 기능 추가
+* 컨테이터 환경 전체 실행후 https://localhost/health 접속시 Json Type으로 IP주소를 반환
