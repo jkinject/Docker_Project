@@ -12,8 +12,15 @@ Springboot, nginx, docker-compose 과제
 * Docker 18.06.1
 * Docker-compose 1.8.0
 
+### 빌드 및 테스트 순서
+	$ git clone https://github.com/jkinject/Docker_Project.git
+	$ cd Docker_Project/webserver/sample-web-ui/
+	$ ./gradlew build -x test
+	$ cd ../../
+	$ python devops.py start
+	$ python devops.py [stop | restart | deploy]
+
 ### 사용법
-----
 	$ python devops.py [start | stop | restart | deploy]
 ----
 * start : 컨테이너 환경 전체 실행
